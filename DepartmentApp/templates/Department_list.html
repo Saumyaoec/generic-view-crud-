@@ -1,0 +1,19 @@
+<ul>
+	<!-- Iterate over object_list -->
+	{% for depart in department_list %}
+	<!-- Display Objects -->
+	<li>{{depart.dept_id}}</li>
+	<li>{{depart.user }}</li>
+	<li>{{depart.role }}</li>
+	<li>{{depart.org }}</li>
+	
+
+	<hr/>
+	<!-- If object_list is empty -->
+	{% empty %}
+	<li>No objects yet.</li>
+	{% endfor %}
+</ul>
+
+
+

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+    <div class="container mt-5" style="background-color: #f8f9fa;">
+        <div class="row">
+
+            <div class="col-sm-6">
+                <form method="post">
+                    {% csrf_token %}
+                    <!-- {{form.as_p}} -->
+                    <div class=" mt-4">
+                        <h4 class="text-primary">Create Departmet</h4>
+                        {{form.user|add_class:"form-control"}}
+                    </div>
+                    <div class=" mt-2">
+                        <label for="exampleInputEmail1" class="form-label text-primary">Add Role Here</label>
+                        {{form.role|add_class:"form-control"}}
+                    </div>
+                    <div class=" mt-4">
+                        {{form.org|add_class:"form-control"}}
+                    </div>
+                    <div class=" mt-3">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-6 mt-4">
+                <img src="https://www.jing.fm/clipimg/detail/254-2545582_employee-clipart-computer-worker-man-in-office-clipart.png">
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+    <div class="container-fluied">
+        <div class="row mt-4">
+            <img src="https://img.freepik.com/free-photo/working-job-career-casual-showing_53876-144825.jpg?w=1380&t=st=1660129085~exp=1660129685~hmac=fb9b1848a036cfc576906898877c4aa334e868db9b56e93667c6543553cd4127">
+        </div>
+        
+        <ul>
+            <li>{{department.dept_id}}</li>
+            <li>{{department.user }}</li>
+            <li>{{department.role }}</li>
+            <li>{{department.org }}</li>
+            
+        </ul>
+    </div>
+{% endblock %}

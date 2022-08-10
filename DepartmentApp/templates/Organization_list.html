@@ -1,0 +1,19 @@
+<ul>
+	<!-- Iterate over object_list -->
+	{% for org in organization_list %}
+	<!-- Display Objects -->
+	<li>{{org.org_id}}</li>
+	<li>{{org.org_name }}</li>
+	<li>{{org.org_email }}</li>
+	<li>{{org.org_contact_no }}</li>
+	<li>{{org.org_address }}</li>
+
+	<hr/>
+	<!-- If object_list is empty -->
+	{% empty %}
+	<li>No objects yet.</li>
+	{% endfor %}
+</ul>
+
+
+
